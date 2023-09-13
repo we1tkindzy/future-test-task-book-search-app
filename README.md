@@ -1,4 +1,4 @@
-### [Книжный поисковик](https://future-test-task-book-search-app.vercel.app/)
+# [Книжный поисковик](https://future-test-task-book-search-app.vercel.app/)
 
 ## Описание
 В поисковике реализованы возможности:
