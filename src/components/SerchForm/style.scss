@@ -1,0 +1,65 @@
+@import "styles/viewports.scss";
+@import "styles/variables.scss";
+
+.search-form {
+  &__search-input {
+    background-color: $gray;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 500px;
+    margin: 0 auto 20px;
+    color: $pink-ebony;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    background-color: inherit;
+  }
+
+  &__error {
+    position: absolute;
+    bottom: -4px;
+    left: 15px;
+    color: $red;
+  }
+
+  &__filters {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $tablet) {
+  .search-form {
+    &__search-input {
+      background-color: $gray;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: 300px;
+      margin: 0 auto 20px;
+      color: $pink-ebony;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+
+    &__filters {
+      gap: 20px;
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .search-form {
+    &__search-input {
+      width: 200px;
+    }
+  }
+}

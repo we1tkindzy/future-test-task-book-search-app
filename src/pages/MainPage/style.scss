@@ -1,0 +1,12 @@
+@import "styles/viewports.scss";
+@import "styles/variables.scss";
+
+.main-page {
+  padding: 40px 20px;
+
+  &__text {
+    font-size: 32px;
+    text-align: center;
+    color: $pink-ebony;
+  }
+}

@@ -1,0 +1,26 @@
+@import "styles/variables.scss";
+@import "styles/variables.scss";
+
+.filter {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-size: 20px;
+
+  &__label {
+    color: $white;
+  }
+
+  &__select {
+    width: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: $pink-ebony;
+    padding: 5px;
+    border: 1px solid $pink-ebony;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

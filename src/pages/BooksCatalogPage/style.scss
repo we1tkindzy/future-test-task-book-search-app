@@ -1,0 +1,38 @@
+@import "styles/viewports.scss";
+@import "styles/variables.scss";
+
+.books-catalog {
+  padding: 20px 0;
+
+  &__count {
+    text-align: center;
+    margin-bottom: 30px;
+    color: $pink-ebony;
+    font-size: 24px;
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    color: $pink-ebony;
+    padding: 5px 10px;
+    border: 1px solid $pink-ebony;
+    border-radius: 5px;
+    width: 200px;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .books-catalog {
+    &__count {
+      font-size: 18px;
+    }
+  }
+}

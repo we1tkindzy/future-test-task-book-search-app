@@ -1,0 +1,125 @@
+@import "styles/viewports.scss";
+@import "styles/variables.scss";
+
+.book-page {
+  padding-bottom: 30px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    column-gap: 80px;
+  }
+
+  &__img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    display: block;
+    width: 350px;
+    height: auto;
+    margin: 40px;
+
+    &--shadow {
+      box-shadow: rgba(0, 0, 0, 0.3) 5px 5px 2.6px;
+    }
+  }
+
+  &__info {
+    padding: 40px 0;
+  }
+
+  &__categories {
+    color: $pink-ebony;
+    border-bottom: 1px solid $pink-ebony;
+    width: max-content;
+    font-size: 16px;
+    margin-bottom: 40px;
+    margin-top: auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  &__authors {
+    color: $pink-ebony;
+    font-size: 16px;
+    margin-bottom: 50px;
+  }
+
+  &__description {
+    &--border {
+      border-radius: 10px;
+      border: 1px solid $pink-ebony;
+      padding: 15px;
+    }
+  }
+
+  &__button-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__button {
+    color: $pink-ebony;
+    padding: 5px 10px;
+    border: 1px solid $pink-ebony;
+    border-radius: 5px;
+    width: 200px;
+    margin: 0 auto;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .book-page {
+    &__wrapper {
+      column-gap: 40px;
+    }
+
+    &__img-wrapper {
+      max-height: 400px;
+    }
+
+    &__img {
+      width: 250px;
+      margin: 20px;
+    }
+
+    &__info {
+      padding: 20px 0;
+      width: 60%;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .book-page {
+    &__wrapper {
+      padding: 20px;
+      flex-direction: column;
+    }
+
+    &__info {
+      padding: 20px;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .book-page {
+    &__img {
+      margin: 10px;
+    }
+  }
+}
