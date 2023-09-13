@@ -24,7 +24,7 @@ const BooksCatalogPage = () => {
 
   useEffect(() => {
     if (!isLoading && books?.length === 0) {
-      navigate(AppRoute.MAIN, { replace: true });
+      navigate(AppRoute.MAIN);
     }
   }, [books, isLoading, navigate]);
 
